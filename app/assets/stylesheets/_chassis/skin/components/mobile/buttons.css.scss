@@ -1,1 +1,40 @@
 // Buttons
+.skin {
+  // Specific styles for a.button
+  a.button {
+  }
+
+  // Specific sttles for button
+  button {
+  }
+
+  a.button,
+  button {
+    @include rounded_corners(2px);
+    @include box_shadow(1px,1px,1px,#bbb);
+    border: 1px solid #375f24;
+    text-shadow: 1px 1px 0 #375f24;
+    @include vertical_gradient(#68ae28,#487d24);
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 105%;
+    font-weight: 600;
+    &:hover {
+      background: #385c1c;
+      background: -moz-linear-gradient(top,#68ae29 0,#385c1c 100%);
+      background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#68ae29),color-stop(100%,#385c1c));
+      background: -webkit-linear-gradient(top,#68ae29 0,#385c1c 100%);
+      background: -o-linear-gradient(top,#68ae29 0,#385c1c 100%);
+      background: -ms-linear-gradient(top,#68ae29 0,#385c1c 100%);
+      background: linear-gradient(top,#68ae29 0,#385c1c 100%);
+    }
+    &:active {
+      background: #487d24;
+      background: -moz-linear-gradient(top,#487d24 0,#68ae29 100%);
+      background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#487d24),color-stop(100%,#68ae29));
+      background: -webkit-linear-gradient(top,#487d24 0,#68ae29 100%);
+      background: -o-linear-gradient(top,#487d24 0,#68ae29 100%);
+      background: -ms-linear-gradient(top,#487d24 0,#68ae29 100%);
+      background: linear-gradient(top,#487d24 0,#68ae29 100%);
+    }
+  }
+}

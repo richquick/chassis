@@ -1,0 +1,6 @@
+// Shadow mixins
+@mixin box_shadow($left_offset,$right_offset,$blur,$color) {
+  -webkit-box-shadow: $left_offset,$right_offset,$blur,$color;
+  -moz-box-shadow: $left_offset,$right_offset,$blur,$color;
+  box-shadow: $left_offset,$right_offset,$blur,$color;
+}

@@ -1,1 +1,25 @@
 // Buttons
+
+// Specific styles for a.button
+a.button {
+	display: inline-block;
+  text-decoration: none;
+}
+
+// Specific sttles for button
+button {
+	border: none;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+a.button,
+button {
+  background: #999;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 100%;
+  &:hover {
+    background: #777;
+  }
+}
